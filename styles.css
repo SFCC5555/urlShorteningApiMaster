@@ -1,0 +1,444 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --font1: 'Poppins', sans-serif;
+
+    --cyan: hsl(180, 66%, 49%);
+    --darkViolet: hsl(257, 27%, 26%);
+
+    --red: hsl(0, 87%, 67%);
+
+    --gray: hsl(0, 0%, 75%);
+    --grayishViolet: hsl(257, 7%, 63%);
+    --veryDarkBlue: hsl(255, 11%, 22%);
+    --veryDarkViolet: hsl(260, 8%, 14%);
+
+    --purple:hsl(228, 45%, 44%);
+    --white: white;
+}
+
+.gap20px {
+    gap: 20px;
+}
+
+.gap10px {
+    gap: 10px;
+}
+
+.fontSize2rem {
+    font-size: 2rem;
+}
+
+.fontSize1-5rem {
+    font-size: 1.5rem;
+}
+
+.borderRadius5px {
+    border-radius: 5px;
+}
+
+.colorWhite {
+    color: var(--white);
+}
+
+body {
+    font-family: var(--font1);
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+    padding-bottom: 0px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.desktopNav {
+    display: none;
+}
+
+.navSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navSection>div {
+    cursor: pointer;
+    color: var(--grayishViolet);
+    font-weight: bold;
+}
+
+.navSection>div:hover {
+    color: var(--veryDarkViolet);
+}
+
+button {
+    background-color: var(--cyan);
+    border: none;
+    padding: 0.5em 1.5em;
+    border-radius: 25px;
+    color: var(--white);
+    cursor: pointer;
+    font-family: var(--font1);
+    font-size: 1.1rem;
+}
+
+button:hover {
+    opacity: 90%;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+span {
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.logo {
+    
+    width: 121px;
+    height: 33px;
+    background-image: url('./images/logo.svg');
+    cursor: pointer;
+
+}
+
+.logoWhite {
+    
+    width: 121px;
+    height: 33px;
+    background-image: url('./images/logoWhite.svg');
+    cursor: pointer;
+
+}
+
+.menuIcon {
+    width: 24px;
+    height: 24px;
+    background-image: url('./images/menuIcon.png');
+    cursor: pointer;
+}
+
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.firstSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 15px;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: var(--veryDarkViolet);
+}
+
+p {
+    font-size: 1.8rem;
+    color: var(--gray);
+}
+
+.shortenSection {
+    
+    width: 100%;
+    background-color: var(--darkViolet);
+    background-image: url('./images/bg-shorten-mobile.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:15px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+input {
+    padding: 0.5em 1.5em;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5rem;
+    font-family: var(--font1);
+    border: 1.5px solid var(--white);
+}
+
+input::placeholder {
+    color: var(--gray);
+}
+
+input:hover {
+    border: 1.5px solid var(--gray);
+}
+
+input:focus {
+    border: 1.5px solid var(--cyan);
+    outline-style: none;
+}
+
+.statisticsSection {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-family: var(--font1);
+    font-size: 2.5rem;
+    color: var(--veryDarkViolet);
+
+}
+
+h3 {
+    font-family: var(--font1);
+    font-size: 2rem;
+    color: var(--veryDarkViolet);
+}
+
+.featuresSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.featureCard {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    text-align: center;
+    align-items: center;
+    padding:15px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: rgb(243, 241, 248);
+    border-radius: 5px;
+    position: relative;
+}
+
+.featuresSection div {
+    width: 10px;
+    height: 75px;
+    background-color: var(--cyan);
+}
+
+.brandLogo {
+    width: 75px;
+    height: 75px;
+    background-image: url('./images/icon-brand-recognition.svg');
+    background-size: 50%;
+    background-color: var(--darkViolet);
+    border-radius: 50%;
+    position: absolute;
+    top: -37.5px;
+}
+
+
+.recordsLogo {
+    width: 75px;
+    height: 75px;
+    background-image: url('./images/icon-detailed-records.svg');
+    background-size: 50%;
+    background-color: var(--darkViolet);
+    border-radius: 50%;
+    position: absolute;
+    top: -37.5px;
+}
+
+.fullyLogo {
+    width: 75px;
+    height: 75px;
+    background-image: url('./images/icon-fully-customizable.svg');
+    background-size: 50%;
+    background-color: var(--darkViolet);
+    border-radius: 50%;
+    position: absolute;
+    top: -37.5px;
+}
+
+.boostSection {
+    width: calc(100% + 30px);
+    background-color: var(--darkViolet);
+    background-image: url('./images/bg-boost-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 80px 15px;
+}
+
+footer {
+    width: calc(100% + 30px);
+    background-color: var(--veryDarkViolet);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+
+}
+
+.footerSection {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    gap: 40px;
+
+}
+
+h5 {
+    font-family: var(--font1);
+    font-weight: bold;
+    color: var(--white);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+footer p:hover {
+    color: var(--cyan);
+}
+
+.iconSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.facebookIcon {
+    width: 24px;
+    height: 24px;
+    background-image: url(./images/icon-facebook.svg);
+    cursor: pointer;
+}
+
+.facebookIcon:hover {
+    background-image: url(./images/icon-facebookHover.svg);
+}
+
+.twitterIcon {
+    width: 24px;
+    height: 20px;
+    background-image: url(./images/icon-twitter.svg);
+    cursor: pointer;
+}
+
+.twitterIcon:hover {
+    background-image: url(./images/icon-twitterHover.svg);
+}
+
+.pinterestIcon {
+    width: 24px;
+    height: 24px;
+    background-image: url(./images/icon-pinterest.svg);
+    cursor: pointer;
+}
+
+.pinterestIcon:hover {
+    background-image: url(./images/icon-pinterestHover.svg);
+}
+
+.instagramIcon {
+    width: 24px;
+    height: 24px;
+    background-image: url(./images/icon-instagram.svg);
+    cursor: pointer;
+}
+
+.instagramIcon:hover {
+    background-image: url(./images/icon-instagramHover.svg);
+}
+
+.menu {
+    position: absolute;
+    width: calc(100% - 30px);
+    background-color: var(--darkViolet);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    color: var(--white);
+    top:60px
+}
+.menu section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+}
+
+.menu section div:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.menu1 {
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--gray);
+}
+
+.menu2 {
+    padding-top: 25px;
+}
+
+.menu2 button {
+    width: 100%;
+}
+
+.attribution { 
+    font-size: 1.1rem;
+    text-align: center;
+}
+.attribution a {
+    color: var(--purple);
+}
+
+.inactive {
+    display: none;
+}

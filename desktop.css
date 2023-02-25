@@ -1,0 +1,92 @@
+
+body {
+    padding: 20px 100px;
+    padding-bottom: 0px;
+}
+
+.desktopNav {
+    display: flex;
+}
+
+.mobileNav {
+    display: none;
+}
+
+.mainSection {
+    flex-direction: row-reverse;
+}
+
+.firstSection {
+    text-align: start;
+    align-items: flex-start;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+}
+
+
+img {
+    width: 50%;
+}
+
+.shortenSection {    
+    background-image: url('./images/bg-shorten-desktop.svg');
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.shortenSection button {
+    width: 25%;
+}
+
+input {
+    flex-grow: 1;
+}
+
+.statisticsSection {
+    width: 60%;
+}
+
+.featuresSection {
+    flex-direction: row;
+    height: 450px;
+
+}
+
+.featuresSection div {
+    width: 75px;
+    height: 10px;
+    background-color: var(--cyan);
+}
+
+.featureCard {
+    text-align: start;
+    align-items: flex-start;
+
+}
+
+.featuresSection>:first-child {
+    align-self: flex-start;
+}
+
+.featuresSection>:last-child {
+    align-self: flex-end;
+}
+
+.boostSection {
+    width: calc(100% + 200px);
+}
+
+footer {
+    width: calc(100% + 200px);
+}
+
+.footerSection {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: start;
+}
